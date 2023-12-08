@@ -4,43 +4,31 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Oliver</title>
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <title>About Me</title>
 
 </head>
 
 
-<body style="background-color:azure;">
-    <!--WHAT SHOWS UP-->
-    <link rel="JAVASCRIPT" type="text/javascript" href="index.js" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+<body>
+    <script src="About me.js"></script>
+    <button class="flexcontainer" id="ImageBack" onclick="BringImagesBack()">Bring Images Back</button>
+    <button id="PrsFrVBUX" onclick="CreditCard()">Press For VBucks</button>
+    <img src="data:image/png;base64,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"
+        alt="Mexican flag" onclick="HideImage('mexico')" id="mexico" />
+    <div id="test-text" class="PressForVbucks">Insert Credit Card Info Below</div>
 
-    <header style="background-color: #59A7B5;text-align: center;">
+    <img src="data:image/png;base64,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"
+        alt="FA" id="FA" onclick="HideImage('FA')" />
 
-        <h1>About Oliver Gibbs</h1>
-    </header>
-    <H1>SIGMA</H1>
-    <h3>My Likes</h3>
-    <ul style="color:black">
-        <li>I like basketball</li>
-        <li>I like PHYCIDELLIC ROCK</li>
-        <li>I like Military aviation</li>
-        <li>I was born on chrismas</li>
-        <li>I like I like my dog</li>
-        <li>I Am SIGMA</li>
-        <li>I like Sigma</li>
+    <form action="/https://www.youtube.com/watch?v=F2GhFXjQujI" id="typing">
 
-    </ul>
-    <h3>More info</h3>
+        <label for="TextBox" class="PressForVbucks">credit card number </label>
+        <input type="text" class="PressForVbucks" id="TextBox" name="fname"><br><br>
 
-    <section id="Animation">
-        <p>ANIMATION IS AWESOME</p>
-    </section>
+
+    </form>
 </body>
-
-<link rel="JAVASCRIPT" type="text/javascript" href="index.js" />
 
 
 </html>
