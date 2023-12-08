@@ -14,3 +14,14 @@ li {
     font-weight: 400;
     font-style: italic
 }
+
+button hover {
+    box-shadow: 0 8px 16px 0 rgba(109, 107, 107, 0.2), 0 6px 20px 0 rgba(109, 107, 107, 0.19);
+    fill: crimson;
+}
+
+
+
+.PressForVbucks {
+    display: none;
+}
